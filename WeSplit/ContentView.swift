@@ -57,6 +57,7 @@ struct ContentView: View {
                 
                 Section("Amount per person") {
                     Text(totalPerPerson, format: .currency(code: "USD"))
+                        .foregroundStyle(tipPercentage == 0 ? .red : .black)
                 }
             }
             .navigationTitle("WeSplit")
